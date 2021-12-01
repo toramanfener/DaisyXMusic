@@ -18,11 +18,11 @@ from DaisyXMusic.config import ASSISTANT_NAME, PROJECT_NAME
 
 
 class Messages:
-    START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
+    START_MSG = "**Merhaba 👋 [{}](tg://user?id={})!**\n\n🤖 Merhaba ✋ Sesli Sohbetlerde Muzik oynatmanıza Yardımcı Olabilen Bir Müzik Botuyum Beni Grubunuza veya Kanalınıza Ekleyerek Kullanabilirsiniz. \n\n✅ Yardım için /help Komutunu Yollayabilirsiniz."
     HELP_MSG = [
         ".",
         f"""
-**Hey 👋 Welcome back to {PROJECT_NAME}
+**Hey 👋 Giriş Ekranına Geri Dön {PROJECT_NAME}
 
 ⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
 
@@ -31,38 +31,38 @@ class Messages:
         f"""
 **Setting up**
 
-1) Make bot admin (Group and in channel if use cplay)
-2) Start a voice chat
-3) Try /play [song name] for the first time by an admin
-*) If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry
+1) Grup'a yönetici olarak ekle
+2) Sesli sohbet başlat
+3) /play komutu ile istediğin şarkıyı başlat
+*) Olası durumlarda Asistanı Kendi Elinizle Eklemeniz Gerekebilir @{ASSISTANT_NAME} Asistana bu kullanıcı adı ile ulaşabilirsiniz
 
 **For Channel Music Play**
-1) Make me admin of your channel 
-2) Send /userbotjoinchannel in linked group
-3) Now send commands in linked group
+1) Kanalına Yönetici olarak Ekle
+2) Bu Komutu /userbotjoinchannel yolla ve Asistanın kanala katılmasını sağla
+3) komutlar ile botun keyfini çıkar
 """,
         f"""
 **Commands**
 
 **=>> Song Playing 🎧**
 
-- /play: Play the requestd song
-- /play [yt url] : Play the given yt url
-- /play [reply yo audio]: Play replied audio
-- /splay: Play song via jio saavn
-- /ytplay: Directly play song via Youtube Music
+- /play: Müzik oynatmanızı sağlar
+- /play [yt url] : Youtube url si ile müzik oynat
+- /play [reply yo audio]: Gruba yada kanala atılan müziği cevaplayarak yolla ve oynat
+- /splay: Jio Savn İle sarkı çal
+- /ytplay: Youtube İle şarkı çal
 
 **=>> Playback ⏯**
 
-- /player: Open Settings menu of player
-- /skip: Skips the current track
-- /pause: Pause track
-- /resume: Resumes the paused track
-- /end: Stops media playback
-- /mute: mute song play
-- /unmute: unmute song play
-- /current: Shows the current Playing track
-- /playlist: Shows playlist
+- /player: Oynatıcı Ayarları
+- /skip: Mevcut parçayı atlar
+- /pause: Mevcut sarkıyı durdurur
+- /resume: Mevcut Sarkı Devam eder
+- /end: Mevcut sarkıyı kapatır
+- /mute: Asistanı Susturur
+- /unmute: Asistanın sesini açar
+- /current: Gecerli çalmakta olaan parçayı gosterir
+- /playlist: Calma Listesini gösterir
 
 *Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.
 """,
